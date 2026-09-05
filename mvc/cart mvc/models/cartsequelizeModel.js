@@ -1,0 +1,24 @@
+const {DataTypes}=require("sequelize");
+
+const sequelize=require("../../../config/sequelize");
+
+const Cart=sequelize.define("Cart",{
+    user_id:{
+        type:DataTypes.INTEGER,
+        allowNull:false
+    },
+    product_id:{
+        type:DataTypes.INTEGER,
+        allowNull:false
+    },
+    quantity:{
+        type:DataTypes.INTEGER,
+        allowNull:false
+    }
+},  
+{
+    tableName:"cart",
+    timestamps:false
+});
+
+module.exports=Cart;
