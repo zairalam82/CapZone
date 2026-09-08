@@ -4,7 +4,7 @@ exports.findCartItem=async(user_id,product_id)=>{
     return await Cart.findOne({
         where:{
             user_id:user_id,
-            procut_id:product_id
+            product_id:product_id
         }
     });
 };
