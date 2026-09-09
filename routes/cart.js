@@ -7,6 +7,8 @@ const authenticateToken=require("../middleware/auth"); //ye abhi rehta hy bana h
 const cartController=require("../mvc/cart mvc/controller/cartController");
 router.post('/',authenticateToken,cartController.addToCart); //agar token valid hy to controller ko req jaye gi
 
+//for get we will use the same controller cartController
+router.get("/",authenticateToken,cartController.getFromCart);
 module.exports=router;
 
 

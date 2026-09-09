@@ -24,9 +24,9 @@ exports.login=(data,callback)=>{
     }
 
 const token=jwt.sign(
-    {user_id:user.id,role:user.role},
+    {user_id:user.user_id,role:user.role},
     process.env.JWT_SECRET,
-    {expiresIn: "1h"}
+    {expiresIn: "3h"}
 );
 
 return callback(null,{

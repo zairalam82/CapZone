@@ -27,5 +27,13 @@ if(existingItem){
     }
 }
 
+}
 
+//get services part
+
+exports.getFromCart=async(user_id)=>{
+   
+    const cartData=await cartModel.getFromCart(user_id);
+    return cartData; //ab ye controller ko return kr dy ga agar ye nhe likhen gay to service ko to model sy data mil gaya lakin controller ko nhe mila
+    
 }
