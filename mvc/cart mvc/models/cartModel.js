@@ -40,4 +40,27 @@ exports.getFromCart=async(user_id)=>{
         }
     })
 }
+//delete model part
 
+exports.deleteFromCart=async(user_id,product_id)=>{
+     return await Cart.destroy({
+        where:{
+            user_id:user_id,
+            product_id:product_id
+        }
+    })
+}
+
+
+exports.putToCart=async(user_id,product_id,quantity)=>{
+    return await Cart.update(
+        {
+            quantity:quantity
+        },
+        {
+        where:{
+            user_id:user_id,
+            product_id:product_id
+        }
+    })
+}
