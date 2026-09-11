@@ -21,6 +21,9 @@ app.use("/api/users",userRoutes);
 const cartRoutes=require("./routes/cart");
 app.use("/api/cart",cartRoutes);
 
+const productRoutes=require("./routes/products");
+app.use("/api/products",productRoutes);
+
 const PORT=process.env.PORT||3000;
 app.listen(PORT,()=>{
     console.log(`Server is running on http://localhost:${PORT}`)
