@@ -24,6 +24,10 @@ app.use("/api/cart",cartRoutes);
 const productRoutes=require("./routes/products");
 app.use("/api/products",productRoutes);
 
+const wishlistRoutes=require("./routes/wishlist");
+app.use("/api/wishlist",wishlistRoutes);
+
+
 const PORT=process.env.PORT||3000;
 app.listen(PORT,()=>{
     console.log(`Server is running on http://localhost:${PORT}`)

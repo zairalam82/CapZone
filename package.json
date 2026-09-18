@@ -23,5 +23,13 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zairalam82/CapZone.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zairalam82/CapZone/issues"
+  },
+  "homepage": "https://github.com/zairalam82/CapZone#readme"
 }
