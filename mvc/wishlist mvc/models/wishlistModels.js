@@ -31,7 +31,6 @@ exports.updateWishlistItem=async(user_id,product_id,quantity)=>{
 
 
 
-
 //delete 
 exports.deleteFromWishlist=async(user_id,product_id)=>{
     const sql=`delete from wishlist where user_id=? And product_id=? `
